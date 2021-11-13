@@ -8,7 +8,7 @@ import androidx.room.PrimaryKey;
 
 import com.celerii.quickflix.BR;
 
-@Entity
+@Entity(tableName = "movie_table")
 public class Movie extends BaseObservable {
     @PrimaryKey
     @NonNull

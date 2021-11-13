@@ -1,5 +1,8 @@
 package com.celerii.quickflix.Mods;
 
+import androidx.room.Entity;
+
+@Entity(tableName = "similar_movies_table")
 public class SimilarMovies extends Movie {
     private String original_movie_id;
 

@@ -2,7 +2,7 @@ package com.celerii.quickflix.Mods;
 
 import androidx.room.Entity;
 
-@Entity
+@Entity(tableName = "searched_movies_table")
 public class SearchedMovies extends Movie {
     private String search_query;
 

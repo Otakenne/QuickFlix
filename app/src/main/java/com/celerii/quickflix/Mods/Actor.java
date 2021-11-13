@@ -4,11 +4,12 @@ import androidx.annotation.NonNull;
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 
-@Entity
+@Entity(tableName = "actor_table")
 public class Actor {
     @PrimaryKey
     @NonNull
-    private int id, gender;
+    private int id;
+    private int gender;
     private String name, biography, birthday, profile_path;
 
     public int getId() {

@@ -2,7 +2,7 @@ package com.celerii.quickflix.Mods;
 
 import androidx.room.Entity;
 
-@Entity
+@Entity(tableName = "movie_credit_table")
 public class MovieCredit {
     private String character, name, original_name, profile_path;
     private int movie_id;
