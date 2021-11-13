@@ -3,11 +3,11 @@ package com.celerii.quickflix.Mods;
 import androidx.room.Entity;
 
 @Entity(tableName = "actor_movies_table")
-public class ActorMovies {
+public class ActorMovie {
     private String title, original_title, character, backdrop_path;
     private int id, actor_id;
 
-    public ActorMovies() {
+    public ActorMovie() {
         this.title = "";
         this.original_title = "";
         this.character = "";
@@ -16,7 +16,7 @@ public class ActorMovies {
         this.actor_id = 0;
     }
 
-    public ActorMovies(String title, String original_title, String character, String backdrop_path, int id, int actor_id) {
+    public ActorMovie(String title, String original_title, String character, String backdrop_path, int id, int actor_id) {
         this.title = title;
         this.original_title = original_title;
         this.character = character;
