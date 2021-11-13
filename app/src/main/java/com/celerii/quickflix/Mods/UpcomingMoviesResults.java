@@ -4,14 +4,14 @@ import java.util.ArrayList;
 
 public class UpcomingMoviesResults {
     private int page;
-    private ArrayList<UpcomingMovies> results;
+    private ArrayList<UpcomingMovie> results;
 
     public UpcomingMoviesResults() {
         this.page = 0;
         this.results = new ArrayList<>();
     }
 
-    public UpcomingMoviesResults(int page, ArrayList<UpcomingMovies> results) {
+    public UpcomingMoviesResults(int page, ArrayList<UpcomingMovie> results) {
         this.page = page;
         this.results = results;
     }
@@ -24,11 +24,11 @@ public class UpcomingMoviesResults {
         this.page = page;
     }
 
-    public ArrayList<UpcomingMovies> getResults() {
+    public ArrayList<UpcomingMovie> getResults() {
         return results;
     }
 
-    public void setResults(ArrayList<UpcomingMovies> results) {
+    public void setResults(ArrayList<UpcomingMovie> results) {
         this.results = results;
     }
 }
